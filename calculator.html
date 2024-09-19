@@ -27,7 +27,31 @@
     </header>
     <!--main  parte central da pagina, normalmente dividida em duas ou mais partes-->
     <main>
+<h3>Calcule a idade do seu Pet</h3>
+<br>
+<br>
+<p>
+A idade de cães e gatos é frequentemente comparada à dos seres humanos para ajudar a entender seu ciclo de vida. Embora uma regra comum seja multiplicar a idade do seu pet por um número fixo, o envelhecimento varia conforme o porte, raça e a espécie. Cães especialmente os de porte maior, envelhecem mais rápido nos primeiros anos, enquanto gatos tem um envelhecimento inicial rápido que se estabiliza após os primeiros anos de vida. Essa diferença significa qua cães e gatos atingem fases da vida - infância, adolescência, maturidade e velhice - muito mais rapidamente do que os humanos, refletindo a necessidade de cuidados específicos em cada etapa.</p>
 
+<div>
+    <p>texto sobre como usar a calculadora</p>
+</div>
+
+<div>
+    <p>texto sobre idade do cachorro ou gato</p>
+</div>
+
+        <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+        <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+
+<py-script>
+    def calcular_idade_humana(idade_animal):
+        return idade_animal * 7
+    print("Bem-vindo a calculadora da idade do seu Pet!")
+    idade_animal = int(input("Digite a idade de seu animal (cachorro ou gato): "))
+    idade_humana = calcular_idade_humana(idade_animal)
+    print(f"Se o seu animal fosse humano ele teria: {idade_humana} anos!")
+</py-script>
 
     </main>
     <!--footer rodapé da pagina, informacoes como direitos, links de redes sociais, etc-->
