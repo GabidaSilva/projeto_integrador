@@ -22,7 +22,7 @@
 /* definicao de cor e fontes da pagina*/
 body{
     background-color: var(--color-1);
-    color: var(--color-7);
+    color: var(--color-6);
     font-family:"Nunito", sans-serif;
     font-size: 2rem;
 }
@@ -41,7 +41,16 @@ body{
 }
 .header_menu_nav{
     font-size: larger;
-    color:var(--color-7);
+    color:var(--color-6);
     text-decoration: none;
     cursor: pointer;
+}
+.header_menu_nav:hover{
+    color: white;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-6);
+    text-align: center;
 }
