@@ -49,7 +49,7 @@ body{
 }
 .header{
     display: flex;
-    justify-content:first baseline;
+    justify-content:center;
     padding:2%;
  }
  .header_img{
@@ -68,7 +68,13 @@ body{
 .header_menu_nav:hover{
     color: white;
 }
-    
+
+ul{
+    display:flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
 .imagem{
     text-align: center;
     width: 450px;
