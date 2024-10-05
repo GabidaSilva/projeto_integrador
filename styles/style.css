@@ -48,6 +48,12 @@ body{
 .header_menu_nav:hover{
     color: white;
 }
+ul{
+    display:flex;
+    list-style-type: none;
+    align-items: center;
+    gap: 20px;
+}
 footer{
     display: flex;
     justify-content: space-between;

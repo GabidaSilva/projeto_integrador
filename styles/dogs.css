@@ -49,6 +49,11 @@ body{
 .header_menu_nav:hover{
     color:var(--color-7);
 }
+ul{
+    display:flex;
+    list-style-type: none;
+    gap: 20px;
+}
 .content {
     display: flex;
     flex-direction: row;
@@ -79,7 +84,7 @@ body{
 }
 .card img {
     background-color: var(--color-7);
-    width: 100%;
+    width: 75%;
     height: 200px;
     object-fit: cover;
     border-radius: 10px;
