@@ -3,7 +3,8 @@
 /* Definição do layout da página, bordas e estilo */
 *{
     margin: 0;
-    padding: 0; 
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Definição de cores e fontes */
@@ -120,44 +121,6 @@ label {
     font-weight: 600;
 }
 
-input[type="number"], select {
-    font-size: 16px;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    border: 2px solid var(--color-6);
-    border-radius: 8px;
-    width: calc(100% - 24px);
-    outline: none;
-    transition: border 0.3s ease;
-}
-
-input[type="number"]:focus, select:focus {
-    border-color: var(--color-5);
-}
-
-button {
-    padding: 12px 20px;
-    background-color: var(--color-3);
-    color: var(--color-7);
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: var(--color-5);
-}
-
-.result {
-    margin-top: 20px;
-    font-size: 18px;
-    color: var(--color-8);
-    font-weight: 600;
-}
 
 footer{
     display: flex;
@@ -165,4 +128,48 @@ footer{
     color: var(--color-6);
     text-align: center;
     gap: 20px;
+}
+
+form {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+form label {
+    font-size: 1.2rem;
+    color: var(--color-8);
+}
+
+form input, form select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid var(--color-4);
+    border-radius: 4px;
+    width: 200px;
+}
+
+form button {
+    background-color: var(--color-5);
+    color: var(--color-7);
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: var(--color-3);
+}
+
+#resultado {
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: var(--color-6);
+    display: flex;
+    justify-content: center;
 }

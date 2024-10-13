@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/calculator.css">
+    <script src="./calculator.js" defer></script>
     <title>Calculadora Lovely Pets</title>
 </head>
 <!--body é o corpo todo da pagina-->
@@ -33,16 +34,15 @@
       <section class="content">
           <article>
                <img src="./assets/retriever-dourado.png" alt="imagem do labrador"> 
-        </article>
+          </article>
         <div>
-            <p>
-                A idade de cães e gatos é frequentemente comparada à dos seres humanos para ajudar a entender seu ciclo de vida. Embora uma regra comum seja multiplicar a idade do seu pet por um número fixo, o envelhecimento varia conforme o porte, raça e a espécie. Cães especialmente os de porte maior, envelhecem mais rápido nos primeiros anos, enquanto gatos tem um envelhecimento inicial rápido que se estabiliza após os primeiros anos de vida. Essa diferença significa qua cães e gatos atingem fases da vida - infância, adolescência, maturidade e velhice - muito mais rapidamente do que os humanos, refletindo a necessidade de cuidados específicos em cada etapa.</p>
+            <p> A idade de cães e gatos é frequentemente comparada à dos seres humanos para ajudar a entender seu ciclo de vida. Embora uma regra comum seja multiplicar a idade do seu pet por um número fixo, o envelhecimento varia conforme o porte, raça e a espécie. Cães especialmente os de porte maior, envelhecem mais rápido nos primeiros anos, enquanto gatos tem um envelhecimento inicial rápido que se estabiliza após os primeiros anos de vida. Essa diferença significa qua cães e gatos atingem fases da vida - infância, adolescência, maturidade e velhice - muito mais rapidamente do que os humanos, refletindo a necessidade de cuidados específicos em cada etapa.</p>
         </div>
       </section>
       <section>
-        <form id="age-calculator">
+        <form id="formulario">
             <label for="idade">Idade do seu pet em (anos):</label>
-            <input type="numero" id="idade" name="idade">
+            <input type="number" id="idade" name="idade" min="1" required>
 
             <label for="peso">Selecione o peso do seu Pet:</label>
             <select name="peso" id="peso">
@@ -52,28 +52,11 @@
                 <option value=">40">Mais de 40 kg</option>
             </select>
 
-            <button type="submit">Calcular a Idade Humana</button>
-
+            <button id="calcular-btn">Calcular</button>
         </form>
-        <p id="resultado"></p>
+
+          <p id="resultado"></p>
       </section>
-
-<div class="calculator">
-    <h2>Calculadora de Idade de Cachorro</h2>
-
-
-
-
-
-
-
-    <p>texto sobre como usar a calculadora</p>
-</div>
-
-<div>
-    <p>texto sobre idade do cachorro ou gato</p>
-</div>
-
 
     </main>
     <!--footer rodapé da pagina, informacoes como direitos, links de redes sociais, etc-->
