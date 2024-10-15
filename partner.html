@@ -8,7 +8,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="./styles/pertner.css">
         <title>Parceiros</title>
     </head>
 <body>
@@ -17,47 +17,93 @@
         <img class="header_img" src="assets/dog.png" alt="Ícone da Logo com um gato e um cão.">
         <nav class="header_menu" >
             <ul>
-                <li><a href="index.html" class="header_menu_nav" >Home</a></li>
-                <li><a href="about.html" class="header_menu_nav" >Sobre</a></li>
-                <li><a href="dogs.html" class="header_menu_nav">Cães</a></li>
-                <li><a href="cats.html" class="header_menu_nav">Gatos</a></li>
-                <li><a href="partner.html" class="header_menu_nav">Parceiros</a></li>
-                <li><a href="calculator.html" class="header_menu_nav">Calculadora</a></li>
+                <li><a href="index.html" class="header_menu_nav" ><img src="/assets/casinha-de-cachorro-unscreen.gif" alt="ícone animado de uma casinha de cachorrode" width="50px">Home</a></li>
+                <li><a href="about.html" class="header_menu_nav" ><img src="/assets/bicho-de-estimacao-unscreen.gif" alt="ícone de nimado de pessoas ." width="50px">Sobre</a></li>
+                <li><a href="dogs.html" class="header_menu_nav"><img src="/assets/cachorro-unscreen.gif" alt="ícone de cão animado" width="50px">Cães</a></li>
+                <li><a href="cats.html" class="header_menu_nav"><img src="/assets/gato-unscreen.gif" alt="ícone de gato animado" width="50px">Gatos</a></li>
+                <li><a href="partner.html" class="header_menu_nav"><img src="/assets/cuidados-com-animais-unscreen.gif" alt="ícone animado" width="50px">Parceiros</a></li>
+                <li><a href="calculator.html" class="header_menu_nav"><img src="/assets/maths-unscreen.gif" alt="ícone animado de uma calculadora" width="50px">Calculadora</a></li>
             </ul>
         </nav>
     </header>
     <!--main  parte central da pagina, normalmente dividida em duas ou mais partes-->
     <main>
-        <section>
-            <div>
-                <h1>Bem-vindos à nossa Comunidade de Parceiros!</h1>
+
+        <section class="content">
+            <div class="imagem-informacao"></div>
+                <img class="imagem1" src="/assets/rostos_cao_gato.webp" alt="Metade dos rostos de um cão e um gato">
+            </div>
+
+            <div class="text-box">
+                <h2>Nossa missão é cuidar!</h2>
                 <p>Aqui você encontra uma rede de parceiros que se dedicam a proporcionar o melhor para seu cão ou gato. De clínicas veterinárias a marcas de alimentação premium, nosso time de parceiros tem o compromisso de garantir a saúde, o bem-estar e a felicidade dos nossos animais de estimação. Conheça quem faz parte dessa jornada com a gente!</p>
             </div>
         </section>
-        <section>
-            <div>
-                <h2>Seja um de nossos parceiros</h2>
+
+        <section class="formulario">
+            <div class="formulario-parceiros">
                 <form action="">
-                    <label for="nome">Nome da empresa:</label>
-                    <input type="text" id="nome" name="nome">
-                    <label for="telefone">Telefone:</label>
-                    <input type="tel" id="telefone" name="telefone">
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email">
-                    <button type="submit">Enviar:</button>
+                    <div class="dados-pessoais">
+                        <h2>Seja um de nossos AUmigos!</h2>
+                        <h3>Dados para contato:</h3>
+                        <label for="nome"><strong>Nome completo:</strong></label>
+                        <input type="text" id="nome" name="nome" required>
+                        <label for="empresa"><strong>Nome da empresa/organização:</strong></label>
+                        <input type="text" id="empresa" name="empresa" required>
+                        <label for="endereco"><strong>Endereço:</strong></label>
+                        <input type="text" id="endereco" name="endereco">
+                        <label for="telefone"><strong>Telefone:</strong></label>
+                        <input type="tel" id="telefone" name="telefone">
+                        <label for="email"><strong>E-mail:</strong></label>
+                        <input type="email" id="email" name="email" required>
+                    </div> 
+                    <div class="informacoes-parceria">
+                        <h3>Informações sobre a parceria:</h3>
+                        <label for="animal"><strong>Sou uma empresa/organização especializada em:</strong></label>
+                        <label> <input type="radio" name="animal" value="Caes" checked><strong>Cães</strong></label>
+                        <label><input type="radio" name="animal" value="gatos"><strong>Gatos</strong></label>
+                        <label><input type="radio" name="animal" value="ambos"><strong>Ambos</strong></label>
+                        <label><strong>Tipo de Parceria Desejada:</strong></label>
+                        <select id="tipo-parceria">
+                            <option>Colaboração para eventos</option>
+                            <option>Fornecimento de produtos/serviços</option>
+                            <option>Doações (de produtos, dinheiro, etc.)</option>
+                            <option>Voluntariado ou suporte logístico</option>
+                        </select>
+                        <label><strong>Áreas de interesse:</strong></label>
+                        <select id="area-interesse">
+                            <option>Adoção de animais</option>
+                            <option> Produtos alimentícios</option>
+                            <option>Serviços de treinamento</option>
+                            <option> Bem-estar animal</option>
+                            <option>Promoção de eventos</option>
+                        </select>
+                    </div>
+                    <button type="submit"><strong>Enviar:</strong></button>
                 </form>
             </div>
         </section>
-        <br>
-        <section>
-            <ul>
-                <li>Parceiro 1</li>
-                <li>Parceiro 2</li>
-                <li>Parceiro 3</li>
-            </ul>
+
+        <section class="cards">
+            <h2>Nossos parceiros</h2>
+            
+            <div class="card petz">
+                <a href=//www.petz.com.br/ target="blan"><img class="image" src="./assets/petz-logo-0.png" alt="logo do site petz"> </a>
+            </div>
+
+            <div class="card whiskas">
+                <a href=https://www.whiskas.com.br/ target="blan"><img class="image" src="/assets/whiskas-logo.png" alt="logo do site petz"> </a>
+            </div>
+
+            <div class="card royal canin">
+                <a href=https://www.royalcanin.com/br target="blan"><img class="image" src="/assets/Royal-Canin-Logo.png" alt="logo do site petz"> </a>
+            </div>
+
+            <div class="card lm">
+                <a href=https://lmveterinaria.com.br/2024/lm-hospital-veterinario-home/ target="blan"><img class="image" src="./assets/LOGO-LM-PNG.png" alt="logo do site petz"> </a>
+            </div>
         </section>
     </main>
-    <br>
     <!--footer rodapé da pagina, informacoes como direitos, links de redes sociais, etc-->
     <footer>
         <p>Blog Lovely Pets - Desenvolvido por Grupo 1 &copy;</p>
