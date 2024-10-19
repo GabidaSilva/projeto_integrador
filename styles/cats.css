@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* definicao do layout da pagina, bordas e estilo*/
+*{
+    margin:0;
+    padding: 0;
+}
+
+/* definicao de cores e fontes*/
+:root{
+    --color-1:#fce573;
+    --color-2:#ebbb2e;
+    --color-3:#F29F05;
+    --color-4:#90c0ff;
+    --color-5:#f16616ee;
+    --color-6:#3F77BF;
+    --color-7:#FFFFFF;
+    --color-8:#423E4F;
+    --color-9:#000000;
+    --color-10:#555;
+}
+
+/* definicao de cor e fontes da pagina*/
+body{
+    background-color: var(--color-1);
+    color: var(--color-6);
+    font-family:"Nunito", sans-serif;
+    font-size: 2rem;
+}
+
+/*definicao header*/
+.header{
+   display: flex;
+   justify-content:center;
+   padding:2%;
+}
+.header_menu_nav{
+    font-size: larger;
+    color:var(--color-6);
+    text-decoration: none;
+    cursor: pointer;
+}
+.header_menu_nav_img{
+    width: 15%;
+    height: 15%;
+    margin-left: 5%;
+    gap: 20px;
+}
+.header_menu_nav:hover{
+    color:var(--color-7);
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.text-box {
+    width:100%;
+    height: 20%;
+    padding: 10px;
+}
+.content1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.card {
+    background-color: var(--color-7);
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid var(--color-3);
+}
+.card img {
+    background-color: var(--color-7);
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card h2 {
+    margin: 3% 0;
+    font-size: 20px;
+    color:var(--color-8);
+}
+
+.card p {
+    font-size: 1rem;
+    color:var(--color-10);
+}
+.informations{
+    display: flex;
+    justify-content:center;
+    gap:2%;
+    padding: auto;
+}
+.informations_icon{
+  font-size: 1rem;
+}
+.informations_icon_img{
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+    cursor: pointer;
+    gap: 10px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    color: var(--color-6);
+    text-align: center;
+    gap: 20px;
+}
+
+
+
+
