@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+    
 <head>
+    <title>Bem-vindo ao Blog Lovely Pets!</title>
+
     <!--head serve para colocar metadados da página,fazer link com a folha de estilos, por nome na página -->
     <meta charset="UTF-8"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/index.css">
     <title>Blog Lovely Pets</title>
 </head>
 <!--body é o corpo todo da pagina-->
@@ -17,23 +20,65 @@
     <header class="header" >
         <img class="header_img" src="assets/dog.png" alt="Ícone da Logo com um gato e um cão.">
         <nav class="header_menu" >
-            <a href="index.html" class="header_menu_nav" >Home</a>
-            <a href="about.html" class="header_menu_nav" >Sobre</a>
-            <a href="dogs.html" class="header_menu_nav">Cães</a>
-            <a href="cats.html" class="header_menu_nav">Gatos</a>
-            <a href="partner.html" class="header_menu_nav">Parceiros</a>
-            <a href="calculator.html" class="header_menu_nav">Calculadora Lovely Pets</a>
+            <ul>
+                <li><a href="index.html" class="header_menu_nav" ><img src="/assets/casinha-de-cachorro-unscreen.gif" alt="ícone animado de uma casinha de cachorrode" width="50px">Home</a></li>
+                <li><a href="about.html" class="header_menu_nav" ><img src="/assets/bicho-de-estimacao-unscreen.gif" alt="ícone de nimado de pessoas ." width="50px">Sobre</a></li>
+                <li><a href="dogs.html" class="header_menu_nav"><img src="/assets/cachorro-unscreen.gif" alt="ícone de cão animado" width="50px">Cães</a></li>
+                <li><a href="cats.html" class="header_menu_nav"><img src="/assets/gato-unscreen.gif" alt="ícone de gato animado" width="50px">Gatos</a></li>
+                <li><a href="partner.html" class="header_menu_nav"><img src="/assets/cuidados-com-animais-unscreen.gif" alt="ícone animado" width="50px">Parceiros</a></li>
+                <li><a href="calculator.html" class="header_menu_nav"><img src="/assets/maths-unscreen.gif" alt="ícone animado de uma calculadora" width="50px">Calculadora</a></li>
+            </ul>
         </nav>
     </header>
     <!--main  parte central da pagina, normalmente dividida em duas ou mais partes-->
+    
     <main>
-
+        <section class="intro">
+            <h2 class="titulo">Bem vindo ao Blog Lovely Pets!</h2>
+            <p class="descricao">Nosso blog é dedicado a dicas sobre cuidados e curiosidades dos pets. </p>
+            <p class="descricao">Cada página foi cuidadosamente elaborada para ajudar você a cuidar do seu amigo peludo com todo amor e respeito que ele merece.</p>
+          </section>
+          <section class="highlights">
+            <div class="highlight">
+              <img src="assets/cao_gato_oculos_sol.png" alt="cao e gato oculos de sol">
+              <h2><a href="dogs.html">Cães</a></h2>
+              <p>Informações e curiosidades dos cães, desde filhote até a fase adulta.</p>
+            </div>
+            <div class="highlight">
+                <div class="text-content"></div> 
+                    <h2><a href="cats.html">Gatos</a></h2>
+                    <p>Dicas, cuidados e curiosidades sobre algumas raças de gatos.</p>
+                </div>
+          </section>
+          <section class="cta">
+            <p>Explore nosso blog e descubra muito mais!!!</p> 
+            <p>Não se esqueça de deixar seus comentários e compartilhar suas experiências conosco!</p>
+           
+          </section>
     </main>
     <!--footer rodapé da pagina, informacoes como direitos, links de redes sociais, etc-->
-    <footer>
-        <p>Blog Lovely Pets - Desenvolvido por Grupo 1 &copy;</p>
-
-    </footer>
+    
+    <section class="cards">
+        <h3>Seja nosso parceiro! Descubra como é fácil!    |</h3>
+        <button onclick="window.location.href='partner.html'">Saiba Mais</button>
+        
+        
+        
+        </div>
+    </section>
+</main>
+<!--footer rodapé da pagina, informacoes como direitos, links de redes sociais, etc-->
+<footer>
+    
+    <p>&copy; 2024 Blog Lovely Pets. Todos os direitos reservados.</p>
+    <p>Criado e Desenvolvido por Grupo 1 - Turma 33 - Proz Educação</p>
+    <p><a href="contact.html">Contato</a> | <a href="privacy.html">Política de Privacidade</a></p>
+</footer>
+    
+    
+    
+    
+    
     <!--script faz a conexao do html  com o javascript-->
     <script src="script.js"></script> 
 </body>

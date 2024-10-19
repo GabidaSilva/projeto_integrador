@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="./styles/calculator.css">
+    <script src="./calculator.js" defer></script>
     <title>Calculadora Lovely Pets</title>
 </head>
 <!--body é o corpo todo da pagina-->
@@ -17,41 +18,45 @@
     <header class="header" >
         <img class="header_img" src="assets/dog.png" alt="Ícone da Logo com um gato e um cão.">
         <nav class="header_menu" >
-            <a href="index.html" class="header_menu_nav" >Home</a>
-            <a href="about.html" class="header_menu_nav" >Sobre</a>
-            <a href="dogs.html" class="header_menu_nav">Cães</a>
-            <a href="cats.html" class="header_menu_nav">Gatos</a>
-            <a href="partner.html" class="header_menu_nav">Parceiros</a>
-            <a href="calculator.html" class="header_menu_nav">Calculadora Lovely Pets</a>
+            <ul>
+                <li><a href="index.html" class="header_menu_nav" >Home</a></li>
+                <li><a href="about.html" class="header_menu_nav" >Sobre</a></li>
+                <li><a href="dogs.html" class="header_menu_nav">Cães</a></li>
+                <li><a href="cats.html" class="header_menu_nav">Gatos</a></li>
+                <li><a href="partner.html" class="header_menu_nav">Parceiros</a></li>
+                <li><a href="calculator.html" class="header_menu_nav">Calculadora</a></li>
+            </ul>
         </nav>
     </header>
     <!--main  parte central da pagina, normalmente dividida em duas ou mais partes-->
     <main>
-<h3>Calcule a idade do seu Pet</h3>
-<br>
-<br>
-<p>
-A idade de cães e gatos é frequentemente comparada à dos seres humanos para ajudar a entender seu ciclo de vida. Embora uma regra comum seja multiplicar a idade do seu pet por um número fixo, o envelhecimento varia conforme o porte, raça e a espécie. Cães especialmente os de porte maior, envelhecem mais rápido nos primeiros anos, enquanto gatos tem um envelhecimento inicial rápido que se estabiliza após os primeiros anos de vida. Essa diferença significa qua cães e gatos atingem fases da vida - infância, adolescência, maturidade e velhice - muito mais rapidamente do que os humanos, refletindo a necessidade de cuidados específicos em cada etapa.</p>
+      <h1>Calcule a idade do seu Pet</h1>
+      <section class="content">
+          <article>
+               <img src="./assets/retriever-dourado.png" alt="imagem do labrador"> 
+          </article>
+        <div>
+            <p> A idade de cães e gatos é frequentemente comparada à dos seres humanos para ajudar a entender seu ciclo de vida. Embora uma regra comum seja multiplicar a idade do seu pet por um número fixo, o envelhecimento varia conforme o porte, raça e a espécie. Cães especialmente os de porte maior, envelhecem mais rápido nos primeiros anos, enquanto gatos tem um envelhecimento inicial rápido que se estabiliza após os primeiros anos de vida. Essa diferença significa qua cães e gatos atingem fases da vida - infância, adolescência, maturidade e velhice - muito mais rapidamente do que os humanos, refletindo a necessidade de cuidados específicos em cada etapa.</p>
+        </div>
+      </section>
+      <section>
+        <form id="formulario">
+            <label for="idade">Idade do seu pet em (anos):</label>
+            <input type="number" id="idade" name="idade" min="1" required>
 
-<div>
-    <p>texto sobre como usar a calculadora</p>
-</div>
+            <label for="peso">Selecione o peso do seu Pet:</label>
+            <select name="peso" id="peso">
+                <option value="<9">Menos de 9 kg</option>
+                <option value="9-23">De 9 a 23 kg</option>
+                <option value="23-40">De 23 a 40 kg</option>
+                <option value=">40">Mais de 40 kg</option>
+            </select>
 
-<div>
-    <p>texto sobre idade do cachorro ou gato</p>
-</div>
+            <button id="calcular-btn">Calcular</button>
+        </form>
 
-        <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
-        <script defer src="https://pyscript.net/latest/pyscript.js"></script>
-
-<py-script>
-    def calcular_idade_humana(idade_animal):
-        return idade_animal * 7
-    print("Bem-vindo a calculadora da idade do seu Pet!")
-    idade_animal = int(input("Digite a idade de seu animal (cachorro ou gato): "))
-    idade_humana = calcular_idade_humana(idade_animal)
-    print(f"Se o seu animal fosse humano ele teria: {idade_humana} anos!")
-</py-script>
+          <p id="resultado"></p>
+      </section>
 
     </main>
     <!--footer rodapé da pagina, informacoes como direitos, links de redes sociais, etc-->

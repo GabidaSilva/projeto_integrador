@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;800&display=swap');
+
+/* Definição do layout da página, bordas e estilo */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definição de cores e fontes */
+:root {
+    --color-1: #fce573;
+    --color-2: #ebbb2e;
+    --color-3: #F29F05;
+    --color-4: #90c0ff;
+    --color-5: #f16616ee;
+    --color-6: #3F77BF;
+    --color-7: #FFFFFF;
+    --color-8: #423E4F;
+    --color-9: #000000;
+    --color-10: #555;
+}
+
+body{
+    background-color: var(--color-1);
+    color: var(--color-6);
+    font-family:"Nunito", sans-serif;
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+
+/*definicao header*/
+.header{
+    display: flex;
+    justify-content:space-between;
+    padding: 1rem;
+    height: 10rem;
+    
+ }
+ .header_menu_nav{
+     font-size: larger;
+     color:var(--color-6);
+     text-decoration: none;
+     cursor: pointer;
+ }
+ .header_menu_nav_img{
+     width: 20px;
+     height: 20px;
+     margin-left: 20rem;
+     gap: 10px;
+ }
+ .header_menu_nav:hover{
+     color:var(--color-7);
+ }
+ ul{
+    display:flex;
+    list-style-type: none;
+    gap: 20px;
+    height: 100%;
+    align-items: center;
+
+}
+
+.calculator {
+    background-color: var(--color-7);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    color: var(--color-6);
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+h2 {
+    color: var(--color-6);
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    font-weight: 800; 
+}
+
+p{
+    font-size: 24px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 20px;
+    max-width: 900px;
+    margin: 2rem;    
+}
+
+article img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 2rem;
+}
+
+.content div p {
+    font-size: 1.5rem;
+    text-align: left;
+    line-height: 1.6;
+    width: 40rem; 
+
+}
+
+
+label {
+    font-size: 18px;
+    color: var(--color-8);
+    font-weight: 600;
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    color: var(--color-6);
+    text-align: center;
+    gap: 20px;
+}
+
+form {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+form label {
+    font-size: 1.2rem;
+    color: var(--color-8);
+}
+
+form input, form select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid var(--color-4);
+    border-radius: 4px;
+    width: 200px;
+}
+
+form button {
+    background-color: var(--color-5);
+    color: var(--color-7);
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: var(--color-3);
+}
+
+#resultado {
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: var(--color-6);
+    display: flex;
+    justify-content: center;
+}
