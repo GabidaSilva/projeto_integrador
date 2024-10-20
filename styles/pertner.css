@@ -97,6 +97,72 @@ ul{
     border-radius: 25px;
 }
 
+
+.cards{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-image: url(/assets/img_fundo.png);
+    margin-bottom: 20px;
+}
+
+.cards h2{
+    width: 100%;
+    font-size: 2.6rem;
+    text-align: center;
+    padding: 10px;
+}
+
+.card{
+    background-color: var(--color-7);
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0 rgba(50, 50, 50, 0.22);
+    padding: 20px;
+    margin: 20px;
+    width: 200px;
+    transition: all 0.3s ease-out;
+    text-align: center;
+    border: 2px solid var(--color-3);
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.card h2{
+    color: --color-6;
+    font-size: 30px;
+}
+
+.card p{
+    color: #423E4F;
+    font-size: 16px;
+}
+
+.image{
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.petz{
+    border-left: 5px solid #f16616ee;
+}
+
+.whiskas{
+    border-left: 5px solid #f16616ee;
+}
+
+.royal{
+    border-left: 5px solid #f16616ee;
+}
+
+.lm{
+    border-left: 5px solid #f16616ee;
+}
+
 .formulario{
     display: flex;
     justify-content: space-around;
@@ -104,6 +170,7 @@ ul{
     border-radius: 8px;
     padding: 20px;
 }
+
 
 .formulario-parceiros{
     display: flex;
@@ -211,83 +278,26 @@ button:hover{
 }
 
 
-
-.cards{
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-image: url(/assets/img_fundo.png);
-    margin-bottom: 20px;
-}
-
-.cards h2{
-    width: 100%;
-    font-size: 2.6rem;
-    text-align: center;
-    padding: 10px;
-}
-
-.card{
-    background-color: var(--color-7);
-    border-radius: 5px;
-    box-shadow: 7px 7px 13px 0 rgba(50, 50, 50, 0.22);
-    padding: 20px;
-    margin: 20px;
-    width: 200px;
-    transition: all 0.3s ease-out;
-    text-align: center;
-    border: 2px solid var(--color-3);
-}
-
-.card:hover{
-    transform: translateY(-5px);
-    cursor: pointer;
-}
-
-.card h2{
-    color: --color-6;
-    font-size: 30px;
-}
-
-.card p{
-    color: #423E4F;
-    font-size: 16px;
-}
-
-.image{
-    max-width: 150px;
-    max-height: 150px;
-}
-
-.petz{
-    border-left: 5px solid #f16616ee;
-}
-
-.whiskas{
-    border-left: 5px solid #f16616ee;
-}
-
-.royal{
-    border-left: 5px solid #f16616ee;
-}
-
-.lm{
-    border-left: 5px solid #f16616ee;
-}
-
 footer{
     background-image: url(/assets/img_fundo.png);
     background-size: cover;
     background-position: center 30%;
-    height: 60px;
-
+    height: 70px;
+    margin: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: var(--color-6);
     text-align: center;
     color: var(--color-7);
     font-size: 1rem;
+}
+
+.footer-text {
+    margin: 5px 0; /* Adiciona margem entre os parágrafos */
+}
+
+.footer-links {
+    margin: 5px 0; /* Adiciona margem entre os parágrafos */
 }
