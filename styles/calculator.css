@@ -152,14 +152,20 @@ form label {
 }
 
 form input, form select {
-    border:solid #3F77BF 2px;
     padding: 0.5rem;
     font-size: 1rem;
-    border: 1px solid var(--color-4);
+    border: 2px solid var(--color-6);
     border-radius: 8px;
     width: 225px;
 }
 
+input:focus{
+    background:#fff4bb;
+}
+
+form select:focus{
+    background:#fff4bb;
+}
 form button {
     background-color: var(--color-6);
     color: var(--color-7);
