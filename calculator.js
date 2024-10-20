@@ -1,5 +1,5 @@
 // Captura o evento de clique no botão de calcular
-document.getElementById("calcular-btn").addEventListener("click", function(event) {
+/*document.getElementById("calcular-btn").addEventListener("click", function(event) {
     event.preventDefault(); // Previne o envio do formulário
     // Obtém os valores dos inputs de idade e peso
     const idade = parseInt(document.getElementById("idade").value);

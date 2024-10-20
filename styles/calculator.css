@@ -26,39 +26,45 @@ body{
     color: var(--color-6);
     font-family:"Nunito", sans-serif;
     font-size: 2rem;
-    margin-left: 2rem;
 }
 
 /*definicao header*/
 .header{
+    background-image: url(/assets/img_fundo.png);
+    background-size: cover;
+    background-position: center 30%;
+    height: 100x;
+
     display: flex;
     justify-content:space-between;
-    padding: 1rem;
-    height: 10rem;
-    
- }
- .header_menu_nav{
-     font-size: larger;
-     color:var(--color-6);
-     text-decoration: none;
-     cursor: pointer;
- }
- .header_menu_nav_img{
-     width: 20px;
-     height: 20px;
-     margin-left: 20rem;
-     gap: 10px;
- }
- .header_menu_nav:hover{
-     color:var(--color-7);
- }
- ul{
+    align-items: center;
+    padding:20px;
+}
+
+.header_img{
+    width: 100px;
+}
+
+.header_menu_nav{
+    font-size: 2rem;
+    color:var(--color-7);
+    text-decoration: none;
+    cursor: pointer;
+}
+.header_menu_nav_img{
+    width: 15%;
+    height: 15%;
+    margin-left: 5%;
+    gap: 15px;
+}
+.header_menu_nav:hover{
+    color:var(--color-5);
+}
+
+ul{
     display:flex;
     list-style-type: none;
     gap: 20px;
-    height: 100%;
-    align-items: center;
-
 }
 
 .calculator {
@@ -72,104 +78,123 @@ body{
 }
 
 h1 {
-    color: var(--color-6);
+    color: var(--color-5);
     margin-top: 4rem;
     margin-bottom: 4rem;
-    font-weight: 800;
+    font-weight: 500;
     text-align: center;
 }
 
-h2 {
-    color: var(--color-6);
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-    font-weight: 800; 
-}
-
-p{
-    font-size: 24px;
-}
-
-.content {
+.content{
     display: flex;
-    justify-content: center;
     align-items:center;
-    gap: 20px;
-    max-width: 900px;
-    margin: 2rem;    
+    justify-content:space-between;
+    padding: 20px 200px 20px 200px;
 }
 
-article img {
-    width: 300px;
-    height: auto;
-    border-radius: 10px;
-    margin-left: 2rem;
+.text-box{
+    padding: 10px;
+    margin: 20px;
+    width: 900px;
+    height: 400px;
 }
 
-.content div p {
-    font-size: 1.5rem;
+.text-box h2{
+    color: var(--color-5);
+    font-size: 50px;
     text-align: left;
-    line-height: 1.6;
-    width: 40rem; 
+}
 
+.text-box p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+.imagem1{
+    max-width: 350px;
+    max-height: 350px;
+    border-radius: 25px;
 }
 
 
 label {
     font-size: 18px;
-    color: var(--color-8);
+    color: var(--color-7);
     font-weight: 600;
 }
 
-
-footer{
-    display: flex;
-    justify-content: center;
-    color: var(--color-6);
-    text-align: center;
-    gap: 20px;
-}
 
 form {
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
+    background-image: url(/assets/img_fundo.png);
+    border-radius: 16px;
+    box-shadow: 7px 7px 13px 0 rgba(50, 50, 50, 0.22);
+    max-width: 400px;
+    max-height: 600px;
+    color: var(--color-7);
+}
+.formulario1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 8px;
+    padding: 20px;
 }
 
 form label {
-    font-size: 1.2rem;
-    color: var(--color-8);
+    font-size: 1.5rem;
+    color: var(--color-7);
+   
 }
 
 form input, form select {
+    border:solid #3F77BF 2px;
     padding: 0.5rem;
     font-size: 1rem;
     border: 1px solid var(--color-4);
-    border-radius: 4px;
-    width: 200px;
+    border-radius: 8px;
+    width: 225px;
 }
 
 form button {
-    background-color: var(--color-5);
+    background-color: var(--color-6);
     color: var(--color-7);
     border: none;
     padding: 0.7rem 1.5rem;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     font-size: 1rem;
     font-weight: bold;
 }
 
 form button:hover {
-    background-color: var(--color-3);
+    background-color: var(--color-4);
 }
 
-#resultado {
-    margin-top: 1rem;
-    font-size: 2rem;
-    color: var(--color-6);
+footer{
+    background-image: url(/assets/img_fundo.png);
+    background-size: cover;
+    background-position: center 30%;
+    height: 70px;
+    margin: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    color: var(--color-6);
+    text-align: center;
+    color: var(--color-7);
+    font-size: 1rem;
+}
+
+.footer-text {
+    margin: 5px 0; /* Adiciona margem entre os parágrafos */
+}
+
+.footer-links {
+    margin: 5px 0; /* Adiciona margem entre os parágrafos */
 }

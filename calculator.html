@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/calculator.css">
-    <script src="./calculator.js" defer></script>
+    <script src="./calculadora.js" defer></script>
     <title>Calculadora Lovely Pets</title>
 </head>
 <!--body é o corpo todo da pagina-->
@@ -18,53 +18,58 @@
     <header class="header" >
         <img class="header_img" src="assets/dog.png" alt="Ícone da Logo com um gato e um cão.">
         <nav class="header_menu" >
-            <ul>
-                <li><a href="index.html" class="header_menu_nav" >Home</a></li>
-                <li><a href="about.html" class="header_menu_nav" >Sobre</a></li>
-                <li><a href="dogs.html" class="header_menu_nav">Cães</a></li>
-                <li><a href="cats.html" class="header_menu_nav">Gatos</a></li>
-                <li><a href="partner.html" class="header_menu_nav">Parceiros</a></li>
-                <li><a href="calculator.html" class="header_menu_nav">Calculadora</a></li>
+             <ul>
+                <li><a href="index.html" class="header_menu_nav" ><img src="/assets/casinha-de-cachorro-unscreen.gif" alt="ícone animado de uma casinha de cachorrode" width="50px">Home</a></li>
+                <li><a href="about.html" class="header_menu_nav" ><img src="/assets/bicho-de-estimacao-unscreen.gif" alt="ícone de nimado de pessoas ." width="50px">Sobre</a></li>
+                <li><a href="dogs.html" class="header_menu_nav"><img src="/assets/cachorro-unscreen.gif" alt="ícone de cão animado" width="50px">Cães</a></li>
+                <li><a href="cats.html" class="header_menu_nav"><img src="/assets/gato-unscreen.gif" alt="ícone de gato animado" width="50px">Gatos</a></li>
+                <li><a href="partner.html" class="header_menu_nav"><img src="/assets/cuidados-com-animais-unscreen.gif" alt="ícone animado" width="50px">Parceiros</a></li>
+                <li><a href="calculator.html" class="header_menu_nav"><img src="/assets/maths-unscreen.gif" alt="ícone animado de uma calculadora" width="50px">Calculadora</a></li>
             </ul>
         </nav>
     </header>
     <!--main  parte central da pagina, normalmente dividida em duas ou mais partes-->
     <main>
-      <h1>Calcule a idade do seu Pet</h1>
+      <h1>Saiba quantos anos tem o seu Pet.</h1>
       <section class="content">
-          <article>
-               <img src="./assets/retriever-dourado.png" alt="imagem do labrador"> 
-          </article>
-        <div>
+        <div class="imagem-informacao"></div>
+            <img class="imagem1" src="/assets/cachorroidoso_01.jpg" alt="imagem cão idoso">
+        </div>
+        <div class="text-box">
             <p> A idade de cães e gatos é frequentemente comparada à dos seres humanos para ajudar a entender seu ciclo de vida. Embora uma regra comum seja multiplicar a idade do seu pet por um número fixo, o envelhecimento varia conforme o porte, raça e a espécie. Cães especialmente os de porte maior, envelhecem mais rápido nos primeiros anos, enquanto gatos tem um envelhecimento inicial rápido que se estabiliza após os primeiros anos de vida. Essa diferença significa qua cães e gatos atingem fases da vida - infância, adolescência, maturidade e velhice - muito mais rapidamente do que os humanos, refletindo a necessidade de cuidados específicos em cada etapa.</p>
         </div>
       </section>
-      <section>
+      <br>
+      <br>
+      <section class = "formulario1">
         <form id="formulario">
-            <label for="idade">Idade do seu pet em (anos):</label>
+            <label for="idade">Idade do seu pet em (anos)</label>
             <input type="number" id="idade" name="idade" min="1" required>
 
-            <label for="peso">Selecione o peso do seu Pet:</label>
-            <select name="peso" id="peso">
+            <label for="peso">Selecione o peso do seu Pet</label>
+            <select name="peso" id="peso" required>
                 <option value="<9">Menos de 9 kg</option>
                 <option value="9-23">De 9 a 23 kg</option>
                 <option value="23-40">De 23 a 40 kg</option>
                 <option value=">40">Mais de 40 kg</option>
             </select>
 
-            <button id="calcular-btn">Calcular</button>
+            <button onclick="calcularIdadeHumana()">Calcular Idade Humana</button>
+
+            <h2>Idade Humana: <span id="idade-humana">0</span></h2>
         </form>
-
-          <p id="resultado"></p>
+     
       </section>
-
     </main>
+    <br>
+    <br>
     <!--footer rodapé da pagina, informacoes como direitos, links de redes sociais, etc-->
     <footer>
-        <p>Blog Lovely Pets - Desenvolvido por Grupo 1 &copy;</p>
+    <p>&copy; 2024 Blog Lovely Pets. Todos os direitos reservados.</p>
+    <p>Criado e Desenvolvido por Grupo 1 - Turma 33 - Proz Educação</p>
+    <p><a href="contact.html">Contato</a> | <a href="privacy.html">Política de Privacidade</a></p>
 
     </footer>
-    <!--script faz a conexao do html  com o javascript-->
-    <script src="script.js"></script> 
+    
 </body>
 </html>
