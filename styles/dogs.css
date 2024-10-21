@@ -31,26 +31,32 @@ body{
     background-image: url(/assets/img_fundo.png);
     background-size: cover;
     background-position: center 30%;
+    height: 100x;
+
     display: flex;
     justify-content:space-between;
     align-items: center;
     padding:20px;
 }
 
+.header_img{
+    width: 100px;
+    }
+
 .header_menu_nav{
     font-size: 2rem;
-    color:var(--color-6);
+    color:var(--color-7);
     text-decoration: none;
     cursor: pointer;
 }
 .header_menu_nav_img{
-    width: 8%;
-    height: 8%;
+    width: 15%;
+    height: 15%;
     margin-left: 5%;
     gap: 15px;
 }
 .header_menu_nav:hover{
-    color:var(--color-7);
+    color:var(--color-5);
 }
 ul{
     display:flex;
@@ -134,26 +140,27 @@ ul{
     cursor: pointer;
     gap: 10px;
 }
+
 footer{
     background-image: url(/assets/img_fundo.png);
     background-size: cover;
-    background-position: center 40%;
-    height: 30%;
+    background-position: center 30%;
+    height: 70px;
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    color: var(--color-6);
+    text-align: center;
+    color: var(--color-7);
+    font-size: 1rem;
 }
-.footer-paragraph{
-    color: var(--color-6);/* Dá cor ao texto*/
-    padding: auto;/* Dá espaçamento ao texto*/
+
+.footer-text {
+    margin: 5px 0; /* Adiciona margem entre os parágrafos */
 }
-.footer a {
-    text-decoration: none; /* Remove o sublinhado */
-    color: inherit; /* Mantém a cor do texto do footer */
-}
-.footer a:hover {
-    text-decoration: underline; /* Adiciona um sublinhado ao passar o mouse, se desejar */
+
+.footer-links {
+    margin: 5px 0; /* Adiciona margem entre os parágrafos */
 }
