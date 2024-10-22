@@ -4,6 +4,7 @@
 *{
     margin:0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* definicao de cores e fontes*/
@@ -25,7 +26,7 @@ body{
     background-color: var(--color-1);
     color: var(--color-6);
     font-family:"Nunito", sans-serif;
-    font-size: 2rem;
+    font-size: 1.6em;
 }
 
 /*definicao header*/
@@ -33,61 +34,65 @@ body{
     background-image: url(/assets/img_fundo.png);
     background-size: cover;
     background-position: center 30%;
-    height: 100x;
+    height: auto;
 
     display: flex;
     justify-content:space-between;
     align-items: center;
     padding:20px;
+    flex-wrap: wrap;
 }
 
 .header_img{
-    width: 100px;
-    }
+    width: 80px;
+}
 
 .header_menu_nav{
-    font-size: 2rem;
+    font-size: 1.6rem;
     color:var(--color-7);
     text-decoration: none;
     cursor: pointer;
 }
+
 .header_menu_nav_img{
-    width: 15%;
-    height: 15%;
-    margin-left: 5%;
-    gap: 15px;
+    width: 40px;
+    margin-left: 10px;
 }
+
 .header_menu_nav:hover{
     color:var(--color-5);
 }
+
 ul{
     display:flex;
     list-style-type: none;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .content{
     display: flex;
-    align-items:center;
+    align-items:flex-start;
     justify-content:space-between;
-    padding: 20px 200px 20px 200px;
+    padding: 2em;
+    flex-wrap: wrap;
 }
 
 .text-box{
     padding: 10px;
     margin: 20px;
-    width: 900px;
+    width: 1000px;
     height: 300px;
 }
 
 .text-box h2{
     color: var(--color-5);
-    font-size: 50px;
+    font-size: 3rem;
     text-align: left;
 }
 
 .text-box p{
-    font-size: 20px;
+    font-size: 1.4rem;
     text-align: justify;
 }
 
@@ -95,72 +100,6 @@ ul{
     max-width: 350px;
     max-height: 350px;
     border-radius: 25px;
-}
-
-
-.cards{
-    display: flex;
-    align-items:center;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-image: url(/assets/img_fundo.png);
-    margin-bottom: 20px;
-}
-
-.cards h2{
-    width: 100%;
-    font-size: 2.6rem;
-    text-align: center;
-    padding: 10px;
-}
-
-.card{
-    background-color: var(--color-7);
-    border-radius: 5px;
-    box-shadow: 7px 7px 13px 0 rgba(50, 50, 50, 0.22);
-    padding: 20px;
-    margin: 20px;
-    width: 200px;
-    transition: all 0.3s ease-out;
-    text-align: center;
-    border: 2px solid var(--color-3);
-}
-
-.card:hover{
-    transform: translateY(-5px);
-    cursor: pointer;
-}
-
-.card h2{
-    color: --color-6;
-    font-size: 30px;
-}
-
-.card p{
-    color: #423E4F;
-    font-size: 16px;
-}
-
-.image{
-    max-width: 150px;
-    max-height: 150px;
-}
-
-.petz{
-    border-left: 5px solid #f16616ee;
-}
-
-.whiskas{
-    border-left: 5px solid #f16616ee;
-}
-
-.royal{
-    border-left: 5px solid #f16616ee;
-}
-
-.lm{
-    border-left: 5px solid #f16616ee;
 }
 
 .formulario{
@@ -174,6 +113,7 @@ ul{
 
 .formulario-parceiros{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 30px;
@@ -181,7 +121,8 @@ ul{
     border-radius: 16px;
     box-shadow: 7px 7px 13px 0 rgba(50, 50, 50, 0.22);
     max-width: 800px;
-    max-height: 1000px;
+    width: 100%;
+    margin: 0 auto;
     color: var(--color-7);
 
 }
@@ -189,9 +130,7 @@ ul{
 .dados-pessoais{
     display:flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: start;
-    padding: 10px;
+    gap: 10px;
 }
 
 .dados-pessoais h2{
@@ -227,9 +166,7 @@ input{
 .informacoes-parceria{
     display:flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: start;
-    padding: 10px;
+    gap: 10px;
 }
 
 .informacoes-parceria h3{
@@ -262,14 +199,15 @@ select{
 }
 
 button{
+    margin-top:  20px;
+    padding: 10px;
     border-radius: 8px;
-    width: 90px;
-    height: 50px;
+    width: 100%;
     font-size: 1.2rem;
     background-color: #3F77BF;
     border-color: #3F77BF;
     color: #FFFFFF;
-    margin-top:  20px;
+    cursor: pointer;
 }
 
 button:hover{
@@ -277,12 +215,71 @@ button:hover{
     box-shadow: inset 2px 2px 2px rgba(20, 1, 130, 0.22);
 }
 
+.cards{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-image: url(/assets/img_fundo.png);
+    margin-bottom: 20px;
+}
+
+.cards h2{
+    width: 100%;
+    font-size: 2.6rem;
+    text-align: center;
+    padding: 10px;
+}
+
+.card{
+    background-color: var(--color-7);
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0 rgba(50, 50, 50, 0.22);
+    padding: 20px;
+    margin: 20px;
+    width: auto;
+    transition: all 0.3s ease-out;
+    border: 2px solid var(--color-3);
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.card h2{
+    color: --color-6;
+    font-size: 3rem;
+}
+
+.image{
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.petz{
+    border-left: 5px solid #f16616ee;
+}
+
+.whiskas{
+    border-left: 5px solid #f16616ee;
+}
+
+.royal{
+    border-left: 5px solid #f16616ee;
+}
+
+.lm{
+    border-left: 5px solid #f16616ee;
+}
+
 
 footer{
     background-image: url(/assets/img_fundo.png);
     background-size: cover;
     background-position: center 30%;
-    height: 70px;
+    height: 60px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -300,4 +297,59 @@ footer{
 
 .footer-links {
     margin: 5px 0; /* Adiciona margem entre os parágrafos */
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 1em;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 1em;
+    }
+
+    .text-box {
+        width: 100%;
+        height: auto;
+        padding: 0.8rem;
+        margin: auto;
+    }
+
+    .text-box h2{
+        text-align: center;
+    }
+
+    .formulario-parceiros {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .cards {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    footer{
+        font-size: 0.9rem;
+        padding: 20px;
+        width: 100%;
+        min-height: 100px;
+    }
+
+    .footer-text, .footer-links {
+        margin: 10px 0;
+    }
+
 }
