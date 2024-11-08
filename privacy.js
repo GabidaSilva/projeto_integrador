@@ -1,0 +1,3 @@
+function fecharPagina() {
+    window.close();
+}

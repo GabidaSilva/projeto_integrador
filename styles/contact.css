@@ -1,9 +1,5 @@
-::after,
-::before {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 
 :root{
     --color-1:#fce573;
@@ -17,115 +13,156 @@
     --color-9:#000000;
     --color-10:#555;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    color:var(--color-9);
+}
 
-
+  
 body {
-    background-color: var(--color-1);
-    
-}
-
-body, textarea{
-    
-    font-family: "Nunito", sans-serif;
-}
-
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
     height: 100vh;
-}
-
-.form_box{
-    background-image: url(/assets/img_fundo.png);
     display: flex;
     flex-direction: column;
-    background-color: #FFFFFF;
-    border: radius 8px;
-    width: 700px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-1);
+    gap:5%;
 }
-
-.form_box .title{
-    padding: 24px 32px;
-    font-size: 24px;
-    border-bottom: thin solid #ccc;
-}
-
-.form_box form{
-    display: flex;
-    align-items: start;
-    flex-wrap: wrap;
-    padding: 32px;
-}
-
-.form_box input,
-.form_box textarea{
-    width: calc(46.5% - 8px);
-    height: 48px;
-    border-radius: 8px;
-    border: thin solid #999;
-    padding-left: 16px;
-    margin-bottom: 16px;
-    font-size: 16px;
-}
-
-.form_box input:first-child{
-    margin-right: 16px;
-}
-
-.form_box input[name=assunto]{
-    width: 100%;
-}
-
-.form_box textarea{
-    width: 100%;
-    height: 180px;
-    padding: 16px;
-
-}
-
-.form_box button{
-    display: block;
-    border: none;
-    outline: none;
-    width: 180px;
-    height: 48px;
-    border-radius: 8px;
-    background-color: var(--color-6);
-    color:#FFFFFF;
-    font-size: 16px;
-    font-weight: bold;
+.close-icon{
+    width: 5%;
+    height: 5%;
     cursor: pointer;
 }
 
-.form_box button:hover{
-    background-color: #145cb9;
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    background-image: url(/assets/img_fundo.png);
+    background-size: cover;
+    background-position: center 30%;
+    height: 80%;
+    border-radius: 16px;
+    padding: 1.5rem 40px;
+}
+  
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-6);
+}
+  
+label {
+    margin-bottom: .2rem;
+    position: relative;
+}
+
+label:not(:first-of-type){
+    margin-top: 1rem;
+}
+  
+input {
+    font-size: 1rem;
+    padding: .2rem .5rem;
+    border-radius: 8px;
+}   
+  
+textarea {
+    font-size: 1rem;
+    padding: .2rem .5rem;
+    border-radius: 8px;
+} 
+
+.helper-text {
+    display: none;
+    font-size: .8rem;
+    color: darkred;
+}
+  
+button {
+    width: 80%;
+    height: 100%;
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    align-self: center;
+    color: var(--color-7);
+    border-radius: 8px;
+    background-color: var(--color-6);
+    padding: auto;
+    cursor: pointer;
+    gap: 5%;
+}
+
+.required-popup::after {
+    content: "* Campo obrigatório";
+    position: absolute;
+    right: 0;
+    top: 15%;
+    color: var(--color-7);
+    font-size: .65rem;
+    padding: .3rem .3rem;
+    width: auto;
+    display: block;
+    border-radius: 2px;
+    background-color: var(--color-9);
+}   
+
+input.error {
+  border: solid 2px #992020;
+  background-color: #CCBBBB;
+  color: #662020;
+}
+
+input.correct {
+  background-color: #BBCCBB;
+  border: solid 2px #206620;
+  color: #206620;
+}
+textarea.error {
+    border: solid 2px #992020;
+    background-color: #CCBBBB;
+    color: #662020;
+}
+  
+textarea.correct {
+    background-color: #BBCCBB;
+    border: solid 2px #206620;
+    color: #206620;
+}
+
+.visible {
+  display: block;
 }
 
 #successMessage {
     display: none; /* Inicialmente escondido */
     color: var(--color-6); /* Cor do texto */
-    font-size: 18px; /* Tamanho da fonte */
+    font-size: 1.5rem; /* Tamanho da fonte */
     font-weight: bold; /* Negrito */
-    margin-top: 20px; /* Espaço acima */
-    text-align: center; /* Centralizar o texto */
+    padding: 1rem; /* Espaçamento interno */
     background-color: var(--color-7); /* Cor de fundo */
-    padding: 10px; /* Espaçamento interno */
-    border-radius: 8px; /* Bordas arredondadas */
     border: 2px solid var(--color-6); /* Borda */
+    border-radius: 8px; /* Bordas arredondadas */
+    
+    /* Centralização */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; /* Centralizar o texto */
+    width: auto; /* Ajusta automaticamente a largura */
+    z-index: 1000; /* Garante que a mensagem fique na frente */
 }
-
-.back-link {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    color: var(--color-6); /* Cor do link */
-    text-decoration: none; /* Remove o sublinhado */
-    font-size: 16px; /* Tamanho da fonte */
-    font-weight: bold; /* Negrito */
-}
-
-.back-link:hover {
-    text-decoration: underline; /* Sublinhado ao passar o mouse */
+:placeholder-shown {
+    border: 2px solid var(--color-6); /* Borda */
+}   
+#message {
+    width: 100%; /* Aumenta a largura para 100% do contêiner */
+    height: 300%; /* Define uma altura maior para o campo */
+    padding: 2%; /* Espaçamento interno para mais conforto ao digitar */
+    font-size:1rem; /* Aumenta o tamanho da fonte */
+    box-sizing: border-box; /* Contêiner com o tamanho do conteúdo */
 }

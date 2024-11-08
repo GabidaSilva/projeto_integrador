@@ -9,28 +9,29 @@
 
 </head>
 <body>
+    <img src="assets/close.png" alt="Fechar" class="close-icon" onclick="fecharPagina()">
+    <form id="contactForm" action="" method="get">
+        <h2>Envie sua mensagem</h2>
+        <label for="username"> </label>
+        <input type ="text" id="username" name="username" placeholder="Seu nome">
+        <p id="username-helper" class="helper-text">Mensagem de ajuda</p>
 
-    <a href="/index.html" class="back-link">Voltar à página principal</a>
+        <label for="email"> </label>
+        <input type ="email" id="email" name="email" placeholder="Seu email">
+        <p id="email-helper" class="helper-text">Mensagem de ajuda</p>
 
-    <div class="container">
+        <label for="assunto"> </label>
+        <input type ="text" id="assunto" name="assunto" placeholder="Assunto">
+        <p id="assunto-helper" class="helper-text">Mensagem de ajuda</p>
 
-        <div class="form_box">
-            
-            <h2 class="title">Envie sua mensagem</h2>
+        <label for="message"> </label>
+        <textarea type ="text" id="message" name="message" placeholder="Mensagem"></textarea>
+        <p id="message-helper" class="helper-text">Mensagem de ajuda</p>
 
-            <form id="contactForm" action="" method="get">
-
-                <input type ="text" name="nome" placeholder="Seu nome">
-                <input type ="email" name="email" placeholder="Seu email">
-                <input type ="text" name="assunto" placeholder="Assunto">
-
-                <textarea name="mensagem" placeholder="Digite sua mensagem"></textarea>
-
-                <button type="submit">Enviar Mensagem</button>
-            </form>
-            <p id="successMessage" style="display:none;">Sua mensagem foi enviada com sucesso!</p>
-        </div>
-    </div>
+        <button type="submit">Enviar Mensagem</button>
+    </form>
+        
+        <p id="successMessage" style="display:none;">Sua mensagem foi enviada com sucesso!</p>
     
 </body>
 
