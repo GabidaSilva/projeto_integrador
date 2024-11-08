@@ -4,7 +4,6 @@
     HTML;
     CSS;
     JAVASCRIPT;
-    PYTHON ? ;
 
 --> Etapas:
     SPRINT I =

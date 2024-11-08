@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/index.css">
+    <script src="/index.js" defer></script>
     <title>Blog Lovely Pets</title>
 </head>
 <!--body é o corpo todo da pagina-->
@@ -36,9 +37,9 @@
         <section class="intro">
             <h2 class="titulo">Bem vindo ao Blog Lovely Pets!</h2>
             <p class="descricao">Nosso blog é dedicado a dicas sobre cuidados e curiosidades dos pets. </p>
-            <p class="descricao">Cada página foi cuidadosamente elaborada para ajudar você a cuidar do seu amigo peludo com todo amor e respeito que ele merece.</p>
-          </section>
-          <section class="highlights">
+            <p class="descricao">Cada página foi cuidadosamente elaborada para ajudar você a cuidar do seu amigo de quatro patas com todo amor e respeito que ele merece.</p>
+        </section>
+        <section class="highlights">
             <div class="highlight">
               <img src="assets/cao_gato_oculos_sol.png" alt="cao e gato oculos de sol">
               <h2><a href="dogs.html">Cães</a></h2>
@@ -48,38 +49,26 @@
                 <div class="text-content"></div> 
                     <h2><a href="cats.html">Gatos</a></h2>
                     <p>Dicas, cuidados e curiosidades sobre algumas raças de gatos.</p>
-                </div>
-          </section>
-          <section class="cta">
+            </div>
+        </section>
+        <section class="cta">
             <p>Explore nosso blog e descubra muito mais!!!</p> 
             <p>Não se esqueça de deixar seus comentários e compartilhar suas experiências conosco!</p>
-           
-          </section>
-    </main>
-    <!--footer rodapé da pagina, informacoes como direitos, links de redes sociais, etc-->
     
-    <section class="cards">
-        <h3>Seja nosso parceiro! Descubra como é fácil!    |</h3>
-        <button onclick="window.location.href='partner.html'">Saiba Mais</button>
-        
-        
-        
-        </div>
-    </section>
-</main>
+        </section>
+        <section class="cards">
+            <h3>Seja nosso parceiro!</h3>
+            <h4>Descubra como é fácil!</h4>
+            <button onclick="window.location.href='partner.html'">Saiba Mais</button>
+        </section>
+    </main>
 <!--footer rodapé da pagina, informacoes como direitos, links de redes sociais, etc-->
 <footer>
-    
     <p>&copy; 2024 Blog Lovely Pets. Todos os direitos reservados.</p>
     <p>Criado e Desenvolvido por Grupo 1 - Turma 33 - Proz Educação</p>
-    <p><a href="contact.html">Contato</a> | <a href="privacy.html">Política de Privacidade</a></p>
-</footer>
-    
-    
-    
-    
-    
-    <!--script faz a conexao do html  com o javascript-->
-    <script src="script.js"></script> 
+    <button class="btn-footer" onclick="abrirPopup()">Contato</button>
+    <button class="btn-footer" onclick="abrirPoliticaPrivacidade()">Política de Privacidade</button>
+</footer> 
+
 </body>
 </html>

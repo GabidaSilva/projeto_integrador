@@ -77,6 +77,15 @@ ul{
     height: 20%;
     padding: 10px;
 }
+.text-box video {
+    width: 50%; /* Define a largura do vídeo como 50% do contêiner pai */
+    border-radius: 15px; /* Mantém as bordas arredondadas */
+    border: 5px solid var(--color-3); /* Mantém a borda ao redor do vídeo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Mantém a sombra */
+    display: block; /* Necessário para centralizar com margin */
+    margin: 20px auto; /* Centraliza o vídeo horizontalmente */
+}
+
 .content1{
     display: flex;
     justify-content: center;
@@ -129,9 +138,9 @@ ul{
 
 footer{
     background-image: url(/assets/img_fundo.png);
-    background-size: cover;
-    background-position: center 30%;
-    height: 70px;
+    background-size:auto;
+    background-position: center 50%;
+    height: 50%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -142,13 +151,20 @@ footer{
     color: var(--color-7);
     font-size: 1rem;
 }
-
-.footer-text {
-    margin: 5px 0; /* Adiciona margem entre os parágrafos */
+button{
+    border-radius: 8px;
+    width: 150px;
+    height: 50px;
+    font-size: 1.2rem;
+    background-color: #3F77BF;
+    border-color: #3F77BF;
+    color: #FFFFFF;
+    margin-top:  20px;
+    cursor: pointer;
 }
 
-.footer-links {
-    margin: 5px 0; /* Adiciona margem entre os parágrafos */
+button:hover{
+    background: #90c0ff;
+    box-shadow: inset 2px 2px 2px rgba(20, 1, 130, 0.22);
 }
-
 

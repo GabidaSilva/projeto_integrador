@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/dogs.css">
+    <script src="/dogs.js" defer></script>
     <title>Cães - Lovely Pets</title>
 </head>
 <!--body é o corpo todo da pagina-->
@@ -40,8 +41,8 @@
                 <p>Cães e seres humanos compartilham uma relação única e profunda que transcende o tempo. Essa convivência amistosa é marcada por lealdade, carinho e uma comunicação silenciosa que fortalece os laços entre ambos. Os cães nos ensinam sobre empatia, confiança e alegria nas pequenas coisas, enquanto nós lhes oferecemos cuidado, proteção e amor incondicional. Juntos, construímos uma parceria harmoniosa que enriquece a vida de todos os envolvidos, celebrando a verdadeira amizade entre espécies.</p>
             </div>
         </section>
-        <section class="content1">
-            <article class="card">
+        <section id="dogs-section" class="content1">
+            <!--<article class="card">
                 <img src="assets/border-preto.jpg" alt="Imagem de Cão Border Collie">
                 <h3 class="card-title" >Border Collie</h3>
                 <p>Os Border Collies são conhecidos por sua inteligência extraordinária e habilidade de trabalho, sendo frequentemente citados como a raça de cães mais inteligente do mundo. Originários da região de fronteira entre Escócia e Inglaterra, foram desenvolvidos para pastorear ovelhas e demonstram um notável foco e energia em suas tarefas. Caracterizam-se por seu pelo de comprimento médio que pode ser liso ou ondulado e por uma variedade de cores e padrões. Esses cães são altamente energéticos, precisam de muito exercício e estimulação mental para evitar comportamentos destrutivos.</p>
@@ -70,7 +71,7 @@
                 <img src="assets/Pinscher.png" alt="Imagem de Cão Pinscher">
                 <h3 class="card-title">Pinscher</h3>
                 <p>O Pinscher é um cão pequeno, ágil e musculoso, com pelagem curta e brilhante. De origem alemã, essa raça é corajosa, alerta e muito protetora, apesar de seu tamanho compacto. Seu corpo é esguio e quadrado, e suas orelhas pontiagudas são uma marca registrada da raça.</p>
-            </article>
+            </article>-->
         </section>
             <div class="informations" >
                 <p>Mais informações</p>
@@ -79,12 +80,10 @@
     </main>
     <!--footer rodapé da pagina, informacoes como direitos, links de redes sociais, etc-->
     <footer>
-    
         <p>&copy; 2024 Blog Lovely Pets. Todos os direitos reservados.</p>
         <p>Criado e Desenvolvido por Grupo 1 - Turma 33 - Proz Educação</p>
-        <p><a href="contact.html">Contato</a> | <a href="privacy.html">Política de Privacidade</a></p>
-    </footer>
-    <!--script faz a conexao do html  com o javascript-->
-    <script src="script.js"></script> 
-</body>
+        <button class="btn-footer" onclick="abrirPopup()">Contato</button>
+        <button class="btn-footer" onclick="abrirPoliticaPrivacidade()">Política de Privacidade</button>
+    </footer> 
+</body>   
 </html>

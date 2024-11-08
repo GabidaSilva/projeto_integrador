@@ -202,7 +202,7 @@ button{
     margin-top:  20px;
     padding: 10px;
     border-radius: 8px;
-    width: 100%;
+    width: 150px;
     font-size: 1.2rem;
     background-color: #3F77BF;
     border-color: #3F77BF;
@@ -277,9 +277,9 @@ button:hover{
 
 footer{
     background-image: url(/assets/img_fundo.png);
-    background-size: cover;
-    background-position: center 30%;
-    height: 60px;
+    background-size:auto;
+    background-position: center 50%;
+    height: 50%;
     margin: auto;
     display: flex;
     flex-direction: column;

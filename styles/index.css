@@ -136,143 +136,16 @@ main .highlights h2 a {
    
 }
 
-/*.content{
-    display: flex;
-    align-items:center;
-    justify-content:space-between;
-    padding: 20px 200px 20px 200px;
-}
-
-.text-box{
-    padding: 10px;
-    margin: 20px;
-    width: 900px;
-    height: 300px;
-}
-
-.text-box h2{
-    color: var(--color-5);
-    font-size: 50px;
-    text-align: left;
-}
-
-.text-box p{
-    font-size: 20px;
-    text-align: justify;
-}
-
-.imagem1{
-    max-width: 350px;
-    max-height: 350px;
-    border-radius: 25px;
-}
-
-.formulario{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 8px;
-    padding: 20px;
-}
-
-.formulario-parceiros{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-    background-image: url(/assets/img_fundo.png);
-    border-radius: 16px;
-    box-shadow: 7px 7px 13px 0 rgba(50, 50, 50, 0.22);
-    max-width: 800px;
-    max-height: 1000px;
-    color: var(--color-7);
-
-}
-
-.dados-pessoais{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: start;
-    padding: 10px;
-}
-
-.dados-pessoais h2{
-    color: #f16616ee;
-    font-size: 3rem;
-    text-align: center;
-}
-
-.dados-pessoais h3{
-    color: #3F77BF;
-    font-size: 2.4rem;
-    text-align: start;
-}
-
-.dados-pessoais label{
-    color: var(--color-7);
-    font-size: 1.6rem;
-    text-align: start;
-}
-
-input{
-    border:solid #3F77BF 2px;
-    border-radius: 8px;
-    height: 24px;
-    font-size: 1rem;
-    color: #f16616ee;
-}
-
-.dados-pessoais input:focus{
-    background:#fff4bb;
-}
-
-.informacoes-parceria{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: start;
-    padding: 10px;
-}
-
-.informacoes-parceria h3{
-    color: #3F77BF;
-    font-size: 2.4rem;
-    text-align: start;
-}
-
-.informacoes-parceria label{
-    color: var(--color-7);
-    font-size: 1.6rem;
-    text-align: start;
-}
-
-.informacoes-parceria input[type="radio"]{
-    width: 18px;
-    margin: 5px;
-}
-
-select{
-    border:solid #3F77BF 3px;
-    border-radius: 8px;
-    height: 40px;
-    font-size: 1rem;
-    color:#f16616ee;
-}
-
-.informacoes-parceria select:focus{
-    background:#fff4bb;
-}*/
-
 button{
     border-radius: 8px;
-    width: 90px;
+    width: 150px;
     height: 50px;
     font-size: 1.2rem;
     background-color: #3F77BF;
     border-color: #3F77BF;
     color: #FFFFFF;
     margin-top:  20px;
+    cursor: pointer;
 }
 
 button:hover{
@@ -280,78 +153,22 @@ button:hover{
     box-shadow: inset 2px 2px 2px rgba(20, 1, 130, 0.22);
 }
 
-
-
 .cards{
+    height: 50vh;
+    width: 80%;
     display: flex;
+    flex-direction: column;
     align-items:center;
     justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
     background-image: url(/assets/img_fundo.png);
-    margin-bottom: 30px;
+    border-radius: 16px;
+    margin-bottom: 50px;
 }
-
-.cards h2{
-    width: 100%;
-    font-size: 2.6rem;
-    text-align: center;
-    padding: 10px;
-}
-
-.card{
-    background-color: var(--color-7);
-    border-radius: 5px;
-    box-shadow: 7px 7px 13px 0 rgba(50, 50, 50, 0.22);
-    padding: 20px;
-    margin: 20px;
-    width: 200px;
-    transition: all 0.3s ease-out;
-    text-align: center;
-    border: 2px solid var(--color-3);
-}
-
-.card:hover{
-    transform: translateY(-5px);
-    cursor: pointer;
-}
-
-.card h2{
-    color: --color-6;
-    font-size: 30px;
-}
-
-.card p{
-    color: #423E4F;
-    font-size: 16px;
-}
-
-/*.image{
-    max-width: 150px;
-    max-height: 150px;
-}
-
-.petz{
-    border-left: 5px solid #f16616ee;
-}
-
-.whiskas{
-    border-left: 5px solid #f16616ee;
-}*/
-
-.royal{
-    border-left: 5px solid #f16616ee;
-}
-
-.lm{
-    border-left: 5px solid #f16616ee;
-}
-
 footer{
     background-image: url(/assets/img_fundo.png);
-    background-size: cover;
-    background-position: center 30%;
-    height: 70px;
+    background-size:auto;
+    background-position: center 50%;
+    height: 50%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -363,10 +180,3 @@ footer{
     font-size: 1rem;
 }
 
-.footer-text {
-    margin: 5px 0; /* Adiciona margem entre os parágrafos */
-}
-
-.footer-links {
-    margin: 5px 0; /* Adiciona margem entre os parágrafos */
-}
