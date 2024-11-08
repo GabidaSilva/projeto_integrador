@@ -292,12 +292,14 @@ footer{
 }
 
 .footer-text {
-    margin: 5px 0; /* Adiciona margem entre os parágrafos */
+    margin: 5px 0;
 }
 
 .footer-links {
-    margin: 5px 0; /* Adiciona margem entre os parágrafos */
+    margin: 5px 0;
 }
+
+/* ---------------------------------------- RESPONSIVIDADE ----------------------------------------------------------------*/
 
 @media (max-width: 768px) {
     .header {
@@ -352,4 +354,25 @@ footer{
         margin: 10px 0;
     }
 
+}
+
+/* ---------------------------- ESTILOS DINÂMICOS -------------------------------------------------*/
+
+.inputError{
+    border: solid rgb(199, 39, 39) 3px;
+    color: rgb(199, 39, 39);
+}
+
+.inputSuccess{
+    border: solid rgb(0, 184, 46) 3px;
+}
+
+.hidden{
+    display:none;
+}
+
+.errorText{
+    display:block;
+    font-size: 0.8rem;
+    color: rgb(199, 39, 39);
 }
