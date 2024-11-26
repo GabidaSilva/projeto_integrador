@@ -39,7 +39,7 @@ Responsividade implementada, especialmente na página de parceiros, garantindo u
 ![Calculadora](https://github.com/user-attachments/assets/2d1d5144-b479-4989-9406-5da03d95f151)
 
 
-O projeto foi publicado no GitHub e está disponível para acesso via deployment no Vercel. 
+O projeto foi publicado no GitHub e está disponível para acesso via deployment no Vercel no seguinte link: https://projeto-integrador-proz2024.vercel.app/ 
 
 
 ## --> Ferramentas:
@@ -56,7 +56,7 @@ O projeto foi publicado no GitHub e está disponível para acesso via deployment
     SPRINT II = data entrega 19/09/24 --> HTML e CSS
 
         Uso apropriado das tags HTML para organização do conteúdo do site.
-        Configurar Repositório criado pela equipe de trabalho.
+        Configuração do Repositório criado pela equipe de trabalho.
     
     SPRINT III = data entrega 22/10/24 --> JavaScript
 
